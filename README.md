@@ -77,7 +77,7 @@ Installation
 
 Clone the repository:
 
-git clone <your-repository-url>
+git clone <https://github.com/kjhgft76-create/careerlens-ai.git>
 cd careerlens-ai
 
 Create a virtual environment:
@@ -169,4 +169,4 @@ This project is licensed under the MIT License.
 
 Where you see:
 
-git clone <your-repository-url>
+git clone <https://github.com/kjhgft76-create/careerlens-ai.git>
