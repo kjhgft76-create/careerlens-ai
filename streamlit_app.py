@@ -168,7 +168,7 @@ st.markdown(
         border: 1px solid #303845 !important;
         border-radius: 10px !important;
 
-        font-size: 1.5rem !important;
+        font-size: 1rem !important;
         line-height: 1.6 !important;
 
         padding: 13px !important;
