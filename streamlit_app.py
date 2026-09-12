@@ -10,7 +10,6 @@ from pdf_parser import PDFExtractionError, extract_text_from_pdf
 
 st.set_page_config(
     page_title="CareerLens AI",
-    page_icon="🎯",
     layout="wide",
 )
 
@@ -214,41 +213,40 @@ st.markdown(
         color: #cbd2dc !important;
     }
 
+/* ======================================================
+   UPLOAD BUTTON
+   ====================================================== */
 
-    /* ======================================================
-       BUTTON
-       ====================================================== */
-    .stButton > button {
-        background: #e7ebf2 !important;
-        color: #0b0f14 !important;
-
-        border: none !important;
-        border-radius: 10px !important;
-
-        min-height: 46px;
-
-        font-size: 1rem;
-        font-weight: 700;
-
-        transition: all 0.15s ease;
-    }
-
-    .stButton > button:hover {
-        background: #ffffff !important;
-        color: #0b0f14 !important;
-    }
-
-    .stButton > button:active {
+    [data-testid="stFileUploader"] button {
         background: #171c24 !important;
         color: #ffffff !important;
-        transform: scale(0.99);
+        border: 1px solid #374151 !important;
+        border-radius: 8px !important;
+        transition: all 0.2s ease !important;
     }
-
-    .stButton > button:focus {
-        background: #171c24 !important;
+    
+    /* Hover effect */
+    [data-testid="stFileUploader"] button:hover {
+        background: #252c38 !important;
         color: #ffffff !important;
-        box-shadow: none !important;
+        border-color: #60a5fa !important;
     }
+    
+    /* Click effect */
+    [data-testid="stFileUploader"] button:active {
+        background: #2563eb !important;
+        color: #ffffff !important;
+        transform: scale(0.97);
+    }
+    
+    /* Focus effect */
+    [data-testid="stFileUploader"] button:focus {
+        background: #2563eb !important;
+        color: #ffffff !important;
+        border-color: #60a5fa !important;
+        box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25) !important;
+    }
+        
     
 
     /* ======================================================
